@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "5dd38bbb-9273-4a8c-a052-f2b14847d21a",
+		"name": "v10",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28990671"
+	},
+	"item": [
+		{
+			"name": "v10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/way-v10?gender=girl&name=somsak",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"way-v10"
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "girl"
+						},
+						{
+							"key": "name",
+							"value": "somsak"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "remove gender",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/way-v10?name=somsak",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"way-v10"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "somsak"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "remove name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/way-v10?gender=girl",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"way-v10"
+							],
+							"query": [
+								{
+									"key": "gender",
+									"value": "girl"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "normal way",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/way-nm?gender=girl&name=somsak",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"way-nm"
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "girl"
+						},
+						{
+							"key": "name",
+							"value": "somsak"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "remove gender",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/way-nm?name=somsak",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"way-nm"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "somsak"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "remove name",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/way-nm?gender=girl",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"way-nm"
+							],
+							"query": [
+								{
+									"key": "gender",
+									"value": "girl"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
