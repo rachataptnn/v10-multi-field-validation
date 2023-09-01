@@ -19,16 +19,16 @@ This repository serves as an illustrative example to showcase two distinct metho
 ### Exploring Error Handling Approaches
 
 #### 1. Simple Function
-The "Simple Function" approach is showcased in the `/normal-way` endpoint. It features a conventional error-handling strategy using standard Go functions. When querying this endpoint, the server employs a function named `normalValidate` to validate the provided parameters. This function's error response is a boolean value and an accompanying error message.
+The "Simple Function" approach is showcased in the `/way-nm` endpoint. It features a conventional error-handling strategy using standard Go functions. When querying this endpoint, the server employs a function named `normalValidate` to validate the provided parameters. This function's error response is a boolean value and an accompanying error message.
 
 #### 2. v10 Custom Validate Function
-The "v10 Custom Validate Function" approach is demonstrated in the `/v10-custom-func` endpoint. This method employs the `v10` validator package to create custom validation functions. The `customValidation` function evaluates the parameters and provides tailored error messages. These messages are then automatically managed by the `v10` validator, streamlining the error response process.
+The "v10 Custom Validate Function" approach is demonstrated in the `/way-v10` endpoint. This method employs the `v10` validator package to create custom validation functions. The `customValidation` function evaluates the parameters and provides tailored error messages. These messages are then automatically managed by the `v10` validator, streamlining the error response process.
 
 ## Steps to Follow
 
 1. Clone this repository to your local machine.
 
-2. Import the Postman collection (`v10-multi-field-validation.postman_collection.json`) into your Postman application.
+2. Import the Postman collection (`v10.postman_collection.json`) into your Postman application.
 
 3. Open a terminal and navigate to the repository directory.
 
